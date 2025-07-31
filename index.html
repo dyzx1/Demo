@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Girlfriend Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Girlfriend Day 💖</h1>
+    
+    <div class="photo-container">
+      <img src="images/img1.jpg" alt="Foto Pacar 1" />
+      <img src="images/img2.jpg" alt="Foto Pacar 2" />
+    </div>
+
+    <button id="startBtn">Mulai</button>
+
+    <div id="message" style="display: none;">
+      <p>Haii sayang, happy girlfriend day yaa cantik... (isi pesan kamu)</p>
+    </div>
+
+    <audio id="bgm" src="lagu.mp3" type="audio/mp3"></audio>
+  </div>
+
+  <script>
+    document.getElementById("startBtn").addEventListener("click", () => {
+      document.getElementById("message").style.display = "block";
+      document.getElementById("startBtn").style.display = "none";
+      document.getElementById("bgm").play();
+    });
+  </script>
+</body>
+</html>
